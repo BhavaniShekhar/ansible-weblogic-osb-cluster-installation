@@ -1,6 +1,6 @@
-# ansible-weblogic-osb-cluster-installation
+# Ansible WebLogic OSB Cluste installation
 
-The playbooks here will help:
+The playbooks here will help in install, setup the WebLogic domain and OSB Domain and also integration with ActiveMQ:
 
 - installing weblogic application server in multiple machines, clustering them and adding to a domain
 - installing weblogic application server with Oracle Service Bus (OSB) in multiple machines, clustering them and adding to a domain
@@ -21,6 +21,7 @@ It contains the following roles. These roles are very granular for better flexib
 
 ## Tested using:
 
+Your VM/System must have the following to test this code.
 - CentOS 6.9
 - Weblogic 12c
 - OSB 12c
@@ -33,3 +34,5 @@ It contains the following roles. These roles are very granular for better flexib
 - download this repository, and go to folder ansible-weblogic-osb-cluster-installation
 - update _inventory/prod/osb/hosts_ for host details, and _group\_vars_, _host\_vars_ to customize the hosts, folders, ports etc
 - execute _ansible-playbook -i inventory/prod/osb install-multi-machines-multi-servers-osb-cluster.yml_ to install multi-node OSB server
+
+Copy Rights (c) GENERAL PUBLIC LICENSE
